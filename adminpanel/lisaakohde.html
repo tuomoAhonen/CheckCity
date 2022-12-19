@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="hallintapaneeli.css" />
+        <title>Lisää kohde</title>
+    </head>
+    <body>
+        <header class="header">
+            <section class="section-for-logo"><img class="logo" src="checkcitylogo_v4.png" alt=""></section>
+            <section class="otsikko">
+                <div class="otsikkodiv"><h1>Hallintapaneeli</h1></div>
+                <nav class="navigation-top">
+                    <ul>
+                        <li><a href="index.html">Pyynnöt</a></li>
+                        <li><a href="lisaakohde.html">Lisää kohde</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <aside class="aside-for-form">
+            <section class="form-area">
+                <form action="" onsubmit="event.preventDefault();">
+                    <label for="aktiivinen">Aktiivinen:</label>
+                    <select name="aktiivinen" id="aktiivinen">
+                        <option value="0">Ei</option>
+                        <option value="1" selected>Kyllä</option>
+                    </select>
+
+                    <label for="display">Display:</label>
+                    <select name="display" id="display">
+                        <option value="0">Ei</option>
+                        <option value="1" selected>Kyllä</option>
+                    </select>
+
+                    <label for="nimi">Nimi: </label>
+                    <input type="text" name="nimi" id="nimi" value="">
+
+                    <label for="kuvaus">Kuvaus: </label>
+                    <textarea name="kuvaus" id="kuvaus" cols="30" rows="10" placeholder="Anna kuvaus palvelulle..."></textarea>
+
+                    <label for="kotisivu">Kotisivut: </label>
+                    <input type="text" name="kotisivu" id="kotisivu" value="">
+
+                    <label for="kategoria">Kategoria:</label>
+                    <select name="kategoria" id="kategoria">
+                        <option value="Kulttuuri">Kulttuuri</option>
+                        <option value="Nähtävyydet">Nähtävyydet</option>
+                        <option value="Palvelut">Palvelut</option>
+                        <option value="Ravintolat">Ravintolat</option>
+                        <option value="Tapahtumat">Tapahtumat</option>
+                        <option value="Treenaaminen">Treenaaminen</option>
+                        <option value="Urheilu">Urheilu</option>
+                    </select>
+
+                    <label for="katuosoite">Katuosoite: </label>
+                    <input type="text" name="katuosoite" id="katuosoite" value="">
+
+                    <label for="postinumero">Postinumero: </label>
+                    <input type="text" name="postinumero" id="postinumero" value="">
+
+                    <label for="kaupunki">Kaupunki: </label>
+                    <input type="text" name="kaupunki" id="kaupunki" value="Helsinki" readonly>
+
+                    <label for="maa">Maa: </label>
+                    <input type="text" name="maa" id="maa" value="Suomi" readonly>
+
+                    <button type="button" onclick="haeAsteet()" id="haekordinaatit" class="haekordinaatit">Hae koordinaatit</button>
+
+                    <label for="leveysaste">Leveysaste: </label>
+                    <input type="text" name="leveysaste" id="leveysaste" value="" readonly>
+
+                    <label for="pituusaste">Pituusaste: </label>
+                    <input type="text" name="pituusaste" id="pituusaste" value="" readonly>
+
+                    <label for="sijainninkuvaus">Sijainnin tarkennus / kuvaus: </label>
+                    <textarea name="sijainninkuvaus" id="sijainninkuvaus" cols="30" rows="10" placeholder="Anna tarkempi kuvaus paikasta. Jotain, mikä kuvaa osoitteen sijaintia. Esimerkiksi: 'Terveystalon A-rappu, 5.krs' tai 'Sibelius puiston eteläinen pääty'"></textarea>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" class="submit" value="Hyväksy">
+                        <input type="reset" class="reset" value="Tyhjennä">
+                    </div>
+                </form>
+            </section>
+        </aside>
+        <section id="kartta" class="kartta"></section>
+        <script src="hallintapaneeli.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    </body>
+</html>
+

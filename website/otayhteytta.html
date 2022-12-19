@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="otayhteytta.css" />
+        <title>Ota yhteyttä</title>
+    </head>
+    <body>
+        <header class="header">
+            <section class="section-for-logo" onclick="undisplayHelp()"><img class="logo" src="checkcitylogo_v4.png" alt=""></section>
+            <section class="section-for-navigation">
+                <button onclick="displayHelp()"></button>
+                <nav class="navigation-top">
+                    <ul>
+                        <li><a href="index.html">Etusivu</a></li>
+                        <li><a href="otayhteytta.html">Ota yhteyttä</a></li>
+                    </ul>
+                </nav>
+                <div id="help" class="help">
+                    <p><b>Apua lomakkeen käyttämiseen: </b></p>
+                    <p>Huomio: tällä hetkellä kohteen tuleen sijaita Helsingissä.</p>
+                    <p>Lisää kohteesi tiedot ja lähetä pyyntö ylläpidolle, jos haluat sen näkyvän sivustollamme.</p>
+                    <p>Tarvitsemme kohteesti nimen, kuvauksen, mihin kategoriaan se tulee, osoitetiedot, koordinaattitiedot kartalla ja vielä mieluiten sijainnin kuvauksen.</p>
+                    <p>Voit itse kirjoittaa osoitetiedot tai hakea ne kartalta klikkaamalla ja vahvistamalla osoitetietojen lisäämisen. Näin saat osoitetiedot & koordinaatit helposti. Punainen raja antaa osviittaa Helsingin alueen rajoista ja se ei ole täydellinen, joten voit halutessasi kokeilla klikata sen ulkopuolelta.</p>
+                    <p>Kirjoittamalla itse osoitetiedot. Voit hakea niiden perusteella koordinaatteja, jos et ole täysin varma, missä kohde sijaitsee kartalla. Yritä tällöin antaa sijainnin lisätiedot kohdassa kuvaus paikasta.</p>
+                    <p>Sijainnin lisätietoihin voi kirjoittaa, mitä vain tärkeää tietoa sijainnista.</p>
+                </div>
+            </section>
+        </header>
+        <aside class="aside-for-form" onclick="undisplayHelp()">
+            <section class="form">
+                <form action="" onsubmit="event.preventDefault();">
+                    <label for="nimi">Nimi: </label>
+                    <input type="text" name="nimi" id="nimi" value="">
+
+                    <label for="kuvaus">Kuvaus: </label>
+                    <textarea name="kuvaus" id="kuvaus" cols="30" rows="10" placeholder="Anna kuvaus palvelulle..."></textarea>
+
+                    <label for="kotisivu">Kotisivut: </label>
+                    <input type="text" name="kotisivu" id="kotisivu" value="">
+
+                    <label for="kategoria">Kategoria:</label>
+                    <select name="kategoria" id="kategoria">
+                        <option value="Kulttuuri">Kulttuuri</option>
+                        <option value="Nähtävyydet">Nähtävyydet</option>
+                        <option value="Palvelut">Palvelut</option>
+                        <option value="Ravintolat">Ravintolat</option>
+                        <option value="Tapahtumat">Tapahtumat</option>
+                        <option value="Treenaaminen">Treenaaminen</option>
+                        <option value="Urheilu">Urheilu</option>
+                    </select>
+
+                    <label for="katuosoite">Katuosoite: </label>
+                    <input type="text" name="katuosoite" id="katuosoite" value="">
+
+                    <label for="postinumero">Postinumero: </label>
+                    <input type="text" name="postinumero" id="postinumero" value="">
+
+                    <label for="kaupunki">Kaupunki: </label>
+                    <input type="text" name="kaupunki" id="kaupunki" value="Helsinki" readonly>
+
+                    <label for="maa">Maa: </label>
+                    <input type="text" name="maa" id="maa" value="Suomi" readonly>
+
+                    <button type="button" onclick="haeAsteet()" id="haekordinaatit" class="haekordinaatit">Hae koordinaatit</button>
+
+                    <label for="leveysaste">Leveysaste: </label>
+                    <input type="text" name="leveysaste" id="leveysaste" value="" readonly>
+
+                    <label for="pituusaste">Pituusaste: </label>
+                    <input type="text" name="pituusaste" id="pituusaste" value="" readonly>
+
+                    <label for="sijainninkuvaus">Lisätietoja sijainnista: </label>
+                    <textarea name="sijainninkuvaus" id="sijainninkuvaus" cols="30" rows="10" placeholder="Anna tarkempi kuvaus paikasta. Jotain, mikä kuvaa osoitteen sijaintia. Esimerkiksi: 'Terveystalon A-rappu, 5.krs' tai 'Sibelius puiston eteläinen pääty'"></textarea>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" class="submit" value="Lähetä pyyntö">
+                        <input type="reset" class="reset" value="Tyhjennä">
+                    </div>
+                </form>
+            </section>
+        </aside>
+        <section id="kartta" class="kartta" onclick="undisplayHelp()"></section>
+        <script src="help.js"></script>
+        <script src="otayhteytta.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    </body>
+</html>
+

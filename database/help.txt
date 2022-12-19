@@ -1,0 +1,2 @@
+Very empty database and restapi.
+Might happen someday in the future.

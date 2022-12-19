@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+html, body {
+    height: 95%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.section-for-logo {
+    display: block;
+    float: left;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    position: relative;
+    display: block;
+    height: 42px;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-for-navigation {
+    display: block;
+    float: left;
+    height: 80px;
+    width: 85%;
+    padding: 0;
+    margin: 0;
+    margin-top: 6px;
+    background-color: #ffffff;
+}
+.section-for-navigation button { 
+    all: unset;
+    cursor: pointer;
+    font-family: 'Bitter', serif;
+    position: absolute;
+    display: block;
+    top: 35px;
+    left: 15%;
+    height: 20px;
+    width: 20px;
+    background-image: url("info.svg");
+}
+.help {
+    position: relative;
+    display: none;
+    width: 15%;
+    padding: 5px;
+    margin-top: 55px;
+    z-index: 1;
+    background-color: #9ACD32;
+}
+.help p {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+}
+.navigation-top {
+    position: relative;
+    display: block;
+    float: right;
+    height: 42px;
+    width: auto;
+    margin-left: auto;
+    margin-right: 1.25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.navigation-top ul li {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin-right: 6px;
+    background-color: #9ACD32;
+}
+.aside-for-form {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 15%;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.form {
+    display: block;
+    width: 75%;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: auto;
+    padding: 5px 10px 30px 5px;
+    background-color: #9ACD32;
+}
+label {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+input {
+    display: block;
+    width: 99%;
+    padding: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+}
+select {
+    display: block;
+    width: 102%;
+    padding: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+}
+textarea {
+    display: block;
+    width: 100%;
+    padding: 1px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+    color: #000000;
+}
+.form-buttons {
+    width: 102%;
+    margin: 0;
+}
+.submit {
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+}
+.reset {
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+}
+.haekordinaatit {
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    font-family: 'Bitter', serif;
+    color: #000000;
+}
+.kartta {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+}
+.pAsteet {
+    display: block;
+    margin: 0;
+    margin-bottom: 4px;
+    padding: 0;
+}
+.help-information {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    z-index: 1;
+    width: 13%;
+    padding: 5px;
+    margin: 0;
+    margin-top: 25px;
+    margin-left: 13%;
+    background-color: #9ACD32;
+}

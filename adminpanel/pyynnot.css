@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+html, body {
+    height: 95%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Bitter', serif;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.section-for-logo {
+    display: block;
+    float: left;
+    width: 15%;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    height: 42px;
+    width: 80%;
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.otsikko {
+    position: relative;
+    display: block;
+    float: left;
+    height: 80px;
+    width: 85%;
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+    
+}
+.otsikkodiv {
+    position: relative;
+    display: block;
+    float: left;
+    height: auto;
+    width: auto;
+    margin-left: 40%;
+    margin-right: auto;
+    text-align: center;
+    
+}
+.navigation-top {
+    position: relative;
+    display: block;
+    float: right;
+    height: 42px;
+    width: auto;
+    margin-left: auto;
+    margin-right: 1.25%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.navigation-top ul li {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin-right: 6px;
+    background-color: #9ACD32;
+}
+h1 {
+    padding: 0;
+    margin-bottom: 0;
+}
+.aside-for-form {
+    display: block;
+    float: left;
+    width: 15% !important;
+    margin: 0;
+    padding: 0;
+}
+.form-area {
+    display: block;
+    width: 75%;
+    margin: 0;
+    margin-left: 10%;
+    margin-right: auto;
+    padding: 5px 10px 20px 5px;
+    background-color: #ffffff;
+}
+.pyynnot {
+    display: block;
+    float: left;
+    height: 100%;
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    background-color: #9ACD32;
+}
+.pyynnotdiv {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /*padding-top: 0.2%;
+    padding-bottom: 0.1%;*/
+}
+.pyynto {
+    display: flex;
+    float: left;
+    /*
+    display: block;
+    float: left;*/
+    width: 100%;
+    margin: 0;
+}
+.pyyntodivs {
+    display: flex;
+    float: left;
+    /*
+    display: block;
+    float: left;*/
+    min-height: 20px !important;
+    max-height: auto;
+    line-height: inherit;
+    padding: 5px;
+    background-color: #FFFF00;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    align-items: center;
+}
+#numero {
+    width: 5%;
+    justify-content: center;
+}
+#nimi {
+    width: 25%;
+}
+#kuvaus {
+    width: 40%;
+}
+#kategoria {
+    width: 10%;
+}
+#muokkaa {
+    width: 7%;
+}
+.buttons {
+    height: 20px;
+    margin: 0;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#poista {
+    width: 6%;
+}
